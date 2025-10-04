@@ -25,8 +25,5 @@ git clone https://github.com/ak1bhasan/NumberGuessingGame.git
 # Go to the project folder
 cd NumberGuessingGame
 
-# Install the required module
-pip install art
-
 # Run the game
 python main.py
