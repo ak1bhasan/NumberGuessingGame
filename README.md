@@ -20,10 +20,3 @@ A simple Python console game where the player tries to guess a randomly chosen n
 1. Clone this repository:
    ```bash
    git clone https://github.com/ak1bhasan/NumberGuessingGame.git
-   
-2. Navigate to the project folder:
-      cd NumberGuessingGame
-
-3. Run the game:
-     python main.py
-
