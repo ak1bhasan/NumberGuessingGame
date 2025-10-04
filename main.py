@@ -16,8 +16,7 @@ def check_answer( user_guess, actual_answer, turns ):
         return turns - 1
     else:
         print(f"You got it! The answer was {actual_answer}.")
-
-
+        return -1
 
 def set_difficulty():
     level = input("Choose a difficulty. Type 'easy' or 'hard' : ").lower()
@@ -28,21 +27,14 @@ def set_difficulty():
         return HARD_LEVEL_TURNS
 
 
-
-
-
 def game():
     print(art.logo)
 
     print("Welcome to the number Guessing Game!")
     print("I'm thinking of a number between 1 and 100.")
 
-
     answer = randint(1, 100)
-
-
     turns = set_difficulty()
-
 
     guess = 0
     while guess != answer:
@@ -56,5 +48,8 @@ def game():
             return
         elif guess != answer:
             print("Guess again.")
+        elif turns == -1:
+            return
 
 game()
+
